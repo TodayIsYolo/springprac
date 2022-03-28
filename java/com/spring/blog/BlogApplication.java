@@ -27,6 +27,3 @@ public class BlogApplication {
                 ZonedDateTime.now(ZoneId.of("Asia/Seoul"))); }
 
 }
-
-
-

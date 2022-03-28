@@ -28,7 +28,7 @@ public class BlogController {
 
     @GetMapping("/api/blogs/{id}")
     public Blog read_one_Blog(@PathVariable Long id){
-         return blogRepository.findById(id).orElseThrow(
+        return blogRepository.findById(id).orElseThrow(
                 () -> new IllegalArgumentException("아이디가 존재하지 않습니다.")
         );
     }
